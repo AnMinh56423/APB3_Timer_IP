@@ -1,1 +1,271 @@
 # ============================================================
+# APB3_Timer_IP - .gitignore
+# RTL / Verilog / SystemVerilog / Questa / ModelSim
+# Windows + Linux development environment
+# ============================================================
+
+
+# ============================================================
+# 1. EDITOR TEMPORARY / BACKUP FILES
+# ============================================================
+
+# Vim / Neovim
+*.swp
+*.swo
+*.swn
+*~
+
+# Undo / backup files
+*.un~
+*.bak
+*.tmp
+*.temp
+
+# Emacs
+\#*\#
+.#*
+
+# Generic editor backup
+*.orig
+*.rej
+
+
+# ============================================================
+# 2. NFS TEMPORARY FILES
+# ============================================================
+
+# Files such as:
+# .nfs000000000ae9208000005c6
+.nfs*
+
+
+# ============================================================
+# 3. QUESTA / MODELSIM GENERATED FILES
+# ============================================================
+
+# Compiled simulation libraries
+work/
+work_lib/
+
+# Common generated library directories
+questa_lib/
+modelsim_lib/
+
+# Waveform database
+*.wlf
+vsim.wlf
+
+# Coverage database
+*.ucdb
+
+# Simulation transcript
+transcript
+transcript.*
+
+# Questa / ModelSim logs
+vsim.log
+vlog.log
+vcom.log
+
+# Generated status / lock files
+*.lck
+*.lock
+
+# Questa temporary files
+wlft*
+*.dbg
+
+
+# ============================================================
+# 4. SIMULATION GENERATED OUTPUTS
+# ============================================================
+
+# Waveform dumps
+*.vcd
+*.fst
+*.ghw
+
+# Generic logs
+*.log
+
+# Journal files
+*.jou
+
+# Simulation output
+*.out
+
+# Temporary simulation results
+*.result
+*.results
+
+
+# ============================================================
+# 5. COVERAGE GENERATED OUTPUTS
+# ============================================================
+
+coverage/
+covhtmlreport/
+htmlcov/
+
+*.cov
+
+
+# ============================================================
+# 6. FPGA / EDA GENERATED DIRECTORIES
+# ============================================================
+
+# Generic build directories
+build/
+_build/
+output/
+outputs/
+
+# Temporary generated directories
+tmp/
+temp/
+
+
+# ============================================================
+# 7. INTEL QUARTUS GENERATED FILES
+# ============================================================
+
+db/
+incremental_db/
+
+*.qws
+*.rpt
+*.summary
+*.smsg
+*.chg
+*.eqn
+*.pin
+
+# Quartus programming / compilation outputs
+*.sof
+*.pof
+*.jic
+*.rbf
+
+
+# ============================================================
+# 8. XILINX VIVADO GENERATED FILES
+# ============================================================
+
+*.jou
+*.str
+
+.Xil/
+.cache/
+.hw/
+.ip_user_files/
+.runs/
+.sim/
+
+
+# ============================================================
+# 9. VS CODE LOCAL SETTINGS
+# ============================================================
+
+.vscode/
+
+# Exception examples if later needed:
+# !.vscode/settings.json
+# !.vscode/extensions.json
+
+
+# ============================================================
+# 10. WINDOWS SYSTEM FILES
+# ============================================================
+
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+$RECYCLE.BIN/
+
+
+# ============================================================
+# 11. MACOS SYSTEM FILES
+# ============================================================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# ============================================================
+# 12. LINUX TEMPORARY FILES
+# ============================================================
+
+.directory
+.fuse_hidden*
+
+
+# ============================================================
+# 13. PYTHON CACHE
+# ============================================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.pytest_cache/
+
+
+# ============================================================
+# 14. GENERIC ARCHIVES / PACKAGES
+# ============================================================
+
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+
+
+# ============================================================
+# 15. LOCAL ENVIRONMENT / SECRET FILES
+# ============================================================
+
+.env
+.env.*
+*.local
+
+
+# ============================================================
+# 16. DO NOT IGNORE IMPORTANT PROJECT FILES
+# ============================================================
+
+# Keep RTL source code
+!*.v
+!*.sv
+!*.vh
+!*.svh
+
+# Keep simulation file lists
+!*.f
+
+# Keep scripts
+!*.csh
+!*.sh
+
+# Keep Makefiles
+!Makefile
+!makefile
+
+# Keep documentation
+!README.md
+!LICENSE
+
+# Keep diagrams / project images
+!*.png
+!*.PNG
+!*.jpg
+!*.jpeg
+
+# Keep documents used by this project
+!*.pdf
+!*.docx
+!*.xlsx
