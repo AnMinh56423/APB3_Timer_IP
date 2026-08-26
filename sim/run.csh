@@ -1,21 +1,21 @@
-#!/bin/csh 
+#!/bin/csh
 
 set cov = 0
 
-if( ($#argv > 0) && ("$1" == "cov") ) then
+if ( ($#argv > 0) && ("$1" == "cov") ) then
     set cov = 1
 endif
 
-foreach pat (`cat pat.list | sed '\/\//d'`)
+foreach pat (`sed '/^[[:space:]]*#/d; /^[[:space:]]*$/d' pat.list`)
     echo $pat
-    if( $cov ) then
+    if ( $cov ) then
         make all_cov TESTNAME=${pat}
     else
         make all TESTNAME=${pat}
     endif
 end
 
-if( $cov ) then
+if ( $cov ) then
     make gen_cov
     make gen_html
 endif

@@ -269,3 +269,12 @@ __pycache__/
 !*.pdf
 !*.docx
 !*.xlsx
+# Project-specific generated files
+modelsim.ini
+run_test.v
+run_test.sv
+sim.log
+sim_cov.log
+rep.log
+compile.log
+compile_cov.log

@@ -43,6 +43,9 @@ task run_test();
 			err = err + 1;
 		end else 
 			$display("t=%0t [PASS]: Halt_ack = %b when halt_req = 1 & dbg_mode = 1", $time, rdata[1]);
+		dbg_mode = 1'b0;
+		repeat(20) @(posedge sys_clk);
+		read(ADDR_TDR0);
 		reset();
 	end
 endtask
