@@ -185,6 +185,19 @@ Prescaler / Counter Control
 - Linux / WSL
 - Git / GitHub
 
+## Antigravity RTL Lab Setup
+
+For the Ubuntu, Questa, lint, project-rule, and safety setup, see [docs/ANTIGRAVITY_SETUP.md](docs/ANTIGRAVITY_SETUP.md).
+
+After creating `env/local.env`, run project commands from the repository root:
+
+```bash
+make doctor
+make lint
+make test TEST=register_chk
+make regress
+```
+
 ## Author
 
 **Huynh Minh An**
