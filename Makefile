@@ -10,6 +10,7 @@ VERILATOR ?= verilator
 ifneq ($(strip $(QUESTA_HOME)),)
 export PATH := $(QUESTA_HOME)/bin:$(PATH)
 endif
+export QUESTA_HOME
 export LM_LICENSE_FILE
 export SALT_LICENSE_SERVER
 
