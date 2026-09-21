@@ -278,3 +278,5 @@ sim_cov.log
 rep.log
 compile.log
 compile_cov.log
+# Workstation-specific EDA paths and licenses
+env/local.env
